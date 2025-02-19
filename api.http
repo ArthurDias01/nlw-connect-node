@@ -9,3 +9,31 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3333/invites/4d0de066-deed-4978-bfcd-56aaf666eda2
+
+###
+
+GET http://localhost:3333/subscribers/4d0de066-deed-4978-bfcd-56aaf666eda2/ranking/clicks
+
+###
+
+POST http://localhost:3333/subscriptions
+Content-Type: application/json
+
+{
+  "name": "John Doe 7",
+  "email": "john7@example.com",
+  "referrerId": "5272b1c4-29bd-490e-aa07-2befd56a6561"
+}
+
+###
+
+GET http://localhost:3333/subscribers/4d0de066-deed-4978-bfcd-56aaf666eda2/ranking/count
+
+###
+
+GET http://localhost:3333/subscribers/4d0de066-deed-4978-bfcd-56aaf666eda2/ranking/position
+
+
+###
+
+GET http://localhost:3333/ranking
